@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 interface IHeroCard {
   id: string,
   superhero: string,
-  publisher: string,
+  publisher?: string,
   alter_ego: string,
   first_appearance: string,
   characters: string,
@@ -22,7 +22,6 @@ const CharactersByHero = ({alter_ego, characters}: ICharactersByHero) => {
 export const HeroCard = ({ 
     id, 
     superhero, 
-    publisher, 
     alter_ego, 
     first_appearance, 
     characters 
